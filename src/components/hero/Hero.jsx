@@ -4,19 +4,24 @@ import './hero.css';
 
 function Hero() {
   return (
+    <div className='hero-container'>
     <motion.div
-      className="hero-container"
-      whileHover={{ scale: 1.05 }}
+      className=""
       whileTap={{ scale: 0.95 }}
       drag="x"
       dragConstraints={{ left: -100, right: 100 }}
     >
-      <img 
-        src="https://media.istockphoto.com/id/1389848442/photo/shot-of-a-young-man-standing-in-front-of-solar-panel-on-a-farm.jpg?s=612x612&w=0&k=20&c=ucOgYeVLM0qHNPo4wpTQJsQggZBc-0VpemoJD-pHiXU=" 
-        alt="Solar Panels" 
-        className="hero-image"
-      />
     </motion.div>
+    <div className='text'>
+    <span className='hero-text'>
+    Powering Progress with Solar Innovation
+    </span>
+    <p>Embrace the revolution of renewable energy with Galo Energy. From robust solar power plants to efficient solar water pumps,
+         we're turning sunlight into a sustainable powerhouse for your daily needs</p>
+    </div>
+    <button className="button-37" role="button">Get Started</button>
+    </div>
+
   );
 }
 
